@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>task16</title>
-  </head>
-<body>
 
-  <div>
-    <label>城市名称：<input id="aqi-city-input" type="text"></label><br>
-    <label>空气质量指数：<input id="aqi-value-input" type="text"></label><br>
-    <button id="add-btn">确认添加</button>
-  </div>
-  <table id="aqi-table">
-  <!-- 
-    <tr>
-      <td>城市</td><td>空气质量</td><td>操作</td>
-    </tr>
-    <tr>
-      <td>北京</td><td>90</td><td><button>删除</button></td>
-    </tr>
-    <tr>
-      <td>北京</td><td>90</td><td><button>删除</button></td>
-    </tr>
-   -->
-  </table>
-
-
-<script type="text/javascript">
 //task.js
 
 /**
@@ -64,7 +36,17 @@ function addAqiData() {
  */
 function renderAqiList() {
   var aqiTable = document.getElementById("aqi-table");
-  aqiTable.innerHTML = "<tr><td>城市</td><td>空气质量</td><td>操作</td></tr>";
+ 
+  var num=0
+  for(var key in aqiData){
+    num++;
+  }
+  if(num!=0){
+    aqiTable.innerHTML = "<tr><td>城市</td><td>空气质量</td><td>操作</td></tr>";
+  }else{
+    aqiTable.innerHTML = "";
+  }
+  
   for(var key in aqiData){
     var oTr=document.createElement("tr");
     oTr.innerHTML="<td>"+key+"</td>"+"<td>"+aqiData[key]+"</td><td><button data-city='"+key+"''>删除</button></td>";
@@ -118,7 +100,3 @@ function init() {
 }
 
 init();
-</script>
-
-</body>
-</html>

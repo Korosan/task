@@ -1,54 +1,3 @@
-<!DOCTYPE>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>task17</title>
-  </head>
-<style type="text/css">
-
-#aqiChart{
-  padding: 20px;
-}
-#aqiChart table tr td{
-  vertical-align: bottom;
-}
-.day{
-  width: 5px;
-  background: red;
-  display:block;
-}
-.week{
-  width: 35px;
-  background: red;
-  display:block;
-}
-.month{
-  width: 150px;
-  background: red;
-  display:block;
-}
-</style>
-<body>
-  <fieldset id="form-gra-time">
-    <legend>请选择日期粒度：</legend>
-    <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
-    <label>周<input name="gra-time" value="week" type="radio"></label>
-    <label>月<input name="gra-time" value="month" type="radio"></label>
-  </fieldset>
-
-  <fieldset>
-    <legend>请选择查看的城市：</legend>
-    <select id="city-select">
-      <option>北京</option>
-    </select>
-  </fieldset>
-
-  <div id="aqiChart" class="aqi-chart-wrap">
-    
-  </div>
-</body>
-<script type="text/javascript">
-//未完成
 //task.js
 
 /* 数据格式演示
@@ -324,5 +273,3 @@ function init() {
 }
 
 init();
-</script>
-</html>
