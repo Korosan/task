@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task19</title>
+</head>
+<style type="text/css">
+#show{
+	margin-top: 10px;
+}
+#show:after{
+	width: 0;
+	height: 0;
+	content: "";
+	display: block;
+	clear: both;
+}
+span{
+	width: 20px;
+	color:white;
+	background: red;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+}
+</style>
+<body>
+<input type="text" id="text" />
+<input type="button" value="左侧入" id="leftIn" />
+<input type="button" value="右侧入" id="rightIn" />
+<input type="button" value="左侧出" id="leftOut" />
+<input type="button" value="右侧出" id="rightOut" />
+<input type="button" value="从小到大" onclick="bubbleSort(0)" />
+<input type="button" value="从大到小" onclick="bubbleSort(1)" />
+<div id="show">
+	
+</div>
+<script type="text/javascript" src="task.js"></script>
+</body>
+</html>
