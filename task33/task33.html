@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task33</title>
+</head>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+#Commond_block{
+	position: relative;
+	width: 500px;
+	margin:0 auto;
+	text-align: center;
+}
+#table{
+	width: 500px;
+	border: 2px solid #000;
+	height: 500px;
+	margin-top: 50px;
+	margin-bottom:20px;
+	overflow: hidden;
+	position: relative;
+
+
+}
+#line{
+	position: absolute;
+	margin-top: -50px;
+}
+#list{
+	position: absolute;
+	margin-left: -50px;
+}
+#table:after,#line:after{
+	width: 0;
+	height: 0;
+	content: "";
+	display: block;
+	clear: both;
+}
+#table tr.first{
+
+}
+#table td{
+	width: 48px;
+	height: 48px;
+	border: 1px dotted #efefef;
+}
+#line li,#list li{
+	line-height: 50px;
+	width: 50px;
+	text-align: center;
+	font-size: 24px;
+}
+#line li{
+	float: left;
+}
+div#square{
+	width: 50px;
+	height: 50px;
+	background: red;
+	position: absolute;
+	transition:1s;
+}
+div#square span{
+	width: 50px;
+	height: 10px;
+	background: blue;
+	display: block;
+}
+</style>
+<script type="text/javascript" src="task.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+	Control.init();
+}
+</script>
+
+<body>
+<div id="Commond_block">
+	<ul id="line">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+	</ul>
+	<ul id="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+	</ul>
+	<ul id="table">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tr class="first">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</ul>
+	<input type="text" id="commond" />
+	<input type="button" value="执行" id="btn" />
+</div>
+
+</body>
+
+</html>
